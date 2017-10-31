@@ -1,0 +1,28 @@
+#include "stdlib.h"
+#include "stdio.h"
+int main(void) {
+
+	for (int a = 0; a <= 4; a+=1) {
+		for (int b = 1; b <= 9; b+=1) {
+			if (b == ((10 / 2) + a) || b == ((10 / 2) - a))
+				printf("*");
+			else
+				printf(" ");
+		}
+		printf("\n");
+	}
+
+	for (int a = 3; a >= 0; a -= 1) {
+		for (int b = 1; b <= 9; b += 1) {
+			if (b == ((10 / 2) + a) || b == ((10 / 2) - a))
+				printf("*");
+			else
+				printf(" ");
+		}
+		printf("\n");
+	}
+
+
+	system("pause");
+	return 0;
+}

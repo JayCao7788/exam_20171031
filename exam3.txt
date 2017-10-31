@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	int mode,m,n;
+
+	printf("1) 正方形\n");
+	printf("2) 長方形\n");
+	printf("3) 等腰直角三角形\n");
+	printf("4) 結束\n");
+	printf("請選擇功能 : ");
+	scanf("%d", &mode);
+
+
+	while (mode != 4)
+	{
+		switch (mode)
+		{
+		case 1: {
+				printf("正方形邊長 : ");
+				scanf("%d", &m);
+
+				for (int i = 1; i <= m; i++)
+				{
+					printf("\n");
+					for (int i = 1; i <= m; i++)
+					{
+						printf(" *");
+					}
+				}
+				printf("\n\n\n");
+		}break;
+
+		case 2: {
+				printf("長方形高和寬 : ");
+				scanf("%d%d", &m, &n);
+
+				for (int i = 1; i <= m; i++)
+				{
+					printf("\n");
+					for (int i = 1; i <= n; i++)
+					{
+						printf(" *");
+					}
+				}
+				printf("\n\n\n");
+		}break;
+
+		case 3: {
+				printf("等腰直角三角形邊長 : ");
+				scanf("%d", &m);
+
+				for (int i = 1; i <= m; i++)
+				{
+					printf("\n");
+					for (int j=1; j <= i; j++)
+					{
+						printf(" *");
+					}			
+				}
+				printf("\n\n\n");
+			}break;
+		}
+
+		printf("1) 正方形\n");
+		printf("2) 長方形\n");
+		printf("3) 等腰直角三角形\n");
+		printf("4) 結束\n");
+		printf("請選擇功能 : ");
+		scanf("%d", &mode);
+
+	}
+
+	printf("\n");
+	printf("結束 !\n");
+	printf("\n");
+
+	system("pause");
+	return 0;
+}
